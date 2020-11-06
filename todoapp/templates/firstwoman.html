@@ -1,0 +1,118 @@
+{% include 'messages/showuser.html' %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/firstwomanstyle.css')}}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/todo.js')}}"></script>
+<!--styling the background-->
+<style>
+    #content{
+        background-image: url("https://i.pinimg.com/736x/ad/46/75/ad4675c7307cb3610264244666641c2f.jpg");
+        background-repeat: no-repeat;
+        padding-right: 140px;
+        padding-left: 40px;
+        border-radius: 30px;
+        padding-bottom: 550px;
+        background-size: 100% 100%;
+    }
+    
+</style>
+<div id="content">
+    <div id="title">
+        <h1 id="top3">Welcome to this section!</h1>
+    </div>
+    <h2>Are you excited to know the first woman in the field of your choice..Then why late pick one!</h2>
+    <div id="options">
+        <!--using div tag to place two buttons in two different lines-->
+        <div id="choice1">
+            <button id="btn13" onclick="Judge()" type="button">First Indian Woman Judge</button><br><br><br>
+            <p id="firstwomanJudge"></p>
+            <button id="btn14" onclick="Climb()" type="button">First Woman to climb Mount Everest</button><br><br><br>
+            <p id="firstwomantoClimb"></p>
+        
+        </div>
+        <!--using div tag to place two buttons in two different lines-->
+        <div id="choice2">
+            <button id="btn15" onclick="IPS()" type="button">First Indian Woman IPS officer</button><br><br><br>
+            <p id="firstwomanIPS"></p>
+            <button id="btn16" onclick="Space()" type="button">First Indian Woman to go into Space</button><br><br><br>
+            <p id="firstwomaninSpace"></p>
+        </div>
+        <!--using table tag to arrange 4 buttons in same line-->
+        <div id="choice3">
+            <table id="table1" style="width:100%",margin-top:100px>
+                <tr>
+                    <th>
+                        <!--using div tag to make a dropdown menu for a button-->
+                        <div id="dropdown1">
+                            <button id="btn9" type="button">Politics</button>
+                            <!--content in dropdown menu-->
+                            <div id="dropdown1-content">
+                                <button id="btn17" onclick="President()" type="button">President</button><br>
+                                <p id="president"></p>
+                                <button id="btn18" onclick="PM()" type="button">Prime Minister</button><br>
+                                <p id="primeminister"></p>
+                                <button id="btn19" onclick="Governor()" type="button">Governor</button><br>
+                                <p id="governor"></p>
+                                <button id="btn20" onclick="CM()" type="button">Cheif Minister</button><br>
+                                <p id="chiefminister"></p>  
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <!--using div tag to make a dropdown menu for a button-->
+                        <div id="dropdown4">
+                            <button id="btn12" type="button">Driving Field</button>
+                            <!--content in dropdown menu-->
+                            <div id="dropdown4-content">
+                                <button id="btn29" onclick="Pilot()" type="button">Pilot</button><br>
+                                <p id="pilot"></p>
+                                <button id="btn30" onclick="TrainDriver()" type="button">Train Driver</button><br>
+                                <p id="traindriver"></p>
+                                <button id="btn31" onclick="MotorBike()" type="button">Motor Bike</button><br>
+                                <p id="motorbike"></p>
+                                <button id="btn32" onclick="AutoRickshaw()" type="button">Auto Rickshaw</button><br>
+                                <p id="autorickshaw"></p>  
+                            </div>
+                        </div>  
+                    </th>
+                    <th>
+                        <!--using div tag to make a dropdown menu for a button-->
+                        <div id="dropdown3">
+                            <button id="btn11" type="button">Awards</button>
+                            <!--content in dropdown menu-->
+                            <div id="dropdown3-content">
+                                <button id="btn26" onclick="NoblePeace()" type="button">Noble Peace Prize</button><br>
+                                <p id="nobleprize"></p>
+                                <button id="btn27" onclick="BharatRatna()" type="button">Bharat Ratna</button><br>
+                                <p id="bharatratna"></p>
+                                <button id="btn28" onclick="PadmaVibhushan()" type="button">Padma Vibhushan</button><br>
+                                <p id="padmavibhushan"></p> 
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <!--using div tag to make a dropdown menu for a button-->
+                        <div id="dropdown2">
+                            <button id="btn10" type="button">Games</button>
+                            <!--content in dropdown menu-->
+                            <div id="dropdown2-content">
+                                <button id="btn21" onclick="Tennis()" type="button">Tennis</button><br>
+                                <p id="tennis"></p>
+                                <button id="btn22" onclick="Badminton()" type="button">Badminton</button><br>
+                                <p id="badminton"></p>
+                                <button id="btn23" onclick="Chess()" type="button">Chess</button><br>
+                                <p id="chess"></p>
+                                <button id="btn24" onclick="Hockey()" type="button">Hockey</button><br>
+                                <p id="hockey"></p>
+                                <button id="btn25" onclick="Boxer()" type="button">Boxer</button><br>
+                                <p id="boxer"></p>    
+                            </div>
+                        </div> 
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+</div>
+<!--To ask the user about what he/she want to do next-->
+{% include 'messages/choice.html' %}
+{% include 'messages/userinput.html' %}

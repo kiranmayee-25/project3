@@ -1,0 +1,27 @@
+{% include 'messages/showuser.html' %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/calculationstyle.css')}}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/todo.js')}}"></script>
+<div id="main">
+  <!--styling the background-->
+  <style>
+    #main{
+          background-image: url("https://image.freepik.com/free-vector/out-line-businessman-calculator-brag_81698-337.jpg");
+          background-repeat: no-repeat;
+          padding: 30px;
+          border-radius: 30px;
+          padding-bottom: 600px;
+          background-size: 100% 100%;
+      }
+  </style>
+  <div id="title">
+    <h1 id="top2">Welcome to this section! </h1>
+  </div>
+  <div id="block">
+    Enter your expression: <input type="text" id="input1" placeholder="Enter your expression here..."><br>
+    <p id="result"></p>
+  </div>
+  <button id="btn" type="button" onclick="getResult()">Get Result</button>
+</div>
+<!--To ask user choice on what to do next-->
+{% include 'messages/choice.html' %}
+{% include 'messages/userinput.html' %}

@@ -1,0 +1,12 @@
+{% extends 'messages/botbase.html' %}
+{% block content %}
+<!--To give message to user that the entered choice is not valid.And to give some help to user-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<p>You sent {{data.key}}: {{data.message}}</p>
+<p>Please enter a valid choice!</p>
+<ul>
+    <li>You can use words like <i class="fa fa-hand-point-right"></i> firstwoman to get the names of first woman in field of your choice. </li>
+    <li>You can use words like <i class="fa fa-hand-point-right"></i> calculation to get the result of expressions.</li>
+    <li>You can end chatting with the bot by using words like <i class="fa fa-hand-point-right"></i> end,stop.</li>
+</ul>
+{% endblock %}

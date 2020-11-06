@@ -1,0 +1,60 @@
+#main{
+    text-align: center;
+}
+
+/*styling the heading*/
+#top2{
+  font-family: serif;
+  color:  rgb(41, 197, 88);
+  font-size: 60px;
+}
+#input1{
+  margin-top:100px;
+  width:220px;
+}
+/*Adding animation to heading*/
+#title{
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-iteration-count: 1;
+}
+@keyframes slide{
+    from{
+        margin-left:100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+#block{
+  text-align:left;
+  margin-top:40px;
+  margin-left:140px;
+}
+
+/*Styling the get result button*/
+#btn{
+  display: inline;
+  background-color: black;
+  color: rgb(230, 118, 44);
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid black;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left:220px;
+}
+
+#btn:hover{
+    background-color:rgb(115, 26, 150);
+    color:whitesmoke;
+}
+#button{
+  text-align: left;
+  
+}
+
+  
